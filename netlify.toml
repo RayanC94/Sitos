@@ -1,0 +1,13 @@
+# Configuration Netlify — site vitrine Learning Trip (statique)
+# Aucune étape de build : les fichiers HTML/CSS/JS sont déjà générés et versionnés
+# (régénérables localement via `python3 build_site.py`). Netlify sert la racine telle quelle.
+
+[build]
+  publish = "."
+  command = ""
+
+# Page d'erreur : on renvoie l'accueil pour les URL inconnues.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
