@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Brochure Learning Trip 2026–2027</title>
+<style>
+  /* Brochure A4 — imprimée en PDF par build_brochure.sh */
+  :root {
+    --navy: #053c64; --navy-deep: #032b49; --ink: #021b30;
+    --ice: #c9f8fe; --cyan: #38d4f0; --text: #16344d; --soft: #5b7891;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: A4; margin: 0; }
+  body { font-family: "Inter", "Helvetica Neue", Helvetica, sans-serif; color: var(--text); }
+  .page { width: 210mm; height: 296mm; page-break-after: always; position: relative; overflow: hidden; padding: 18mm; }
+  h1, h2, h3 { font-family: "Poppins", "Avenir Next", sans-serif; }
+
+  /* ---- couverture ---- */
+  .cover { background: linear-gradient(160deg, var(--navy) 0%, var(--ink) 80%); color: var(--ice); display: flex; flex-direction: column; justify-content: space-between; }
+  .cover .year { letter-spacing: .25em; font-size: 11pt; color: var(--cyan); }
+  .cover img.logo { width: 70mm; }
+  .cover h1 { font-size: 33pt; line-height: 1.15; color: #fff; max-width: 150mm; }
+  .cover .tag { font-size: 13pt; color: var(--ice); opacity: .85; margin-top: 6mm; }
+  .cover .foot { font-size: 9.5pt; opacity: .6; }
+  .dots { position: absolute; right: -30mm; top: -30mm; width: 120mm; height: 120mm; border-radius: 50%;
+          background: radial-gradient(circle, rgba(56,212,240,.25) 1px, transparent 1.5px); background-size: 6px 6px; opacity: .5; }
+
+  /* ---- pages intérieures ---- */
+  .head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9mm; }
+  .head img { height: 12mm; }
+  .head .kicker { font-size: 9pt; letter-spacing: .2em; text-transform: uppercase; color: var(--cyan); font-weight: 600; }
+  h2.title { font-size: 20pt; color: var(--navy); margin-bottom: 6mm; }
+  p.lead { font-size: 10.5pt; color: var(--soft); max-width: 150mm; margin-bottom: 8mm; line-height: 1.6; }
+
+  .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .pillar { border: 1px solid #dce9f2; border-radius: 4mm; padding: 6mm; }
+  .pillar h3 { color: var(--navy); font-size: 12pt; margin-bottom: 2mm; }
+  .pillar p { font-size: 9.5pt; color: var(--soft); line-height: 1.55; }
+
+  .stats { display: flex; gap: 10mm; margin-top: 9mm; background: var(--navy); border-radius: 4mm; padding: 7mm 9mm; }
+  .stats div b { display: block; font-family: "Poppins", sans-serif; font-size: 19pt; color: var(--cyan); }
+  .stats div span { font-size: 8.5pt; color: var(--ice); opacity: .8; }
+
+  .steps { counter-reset: n; margin-top: 9mm; }
+  .stepline { display: flex; gap: 5mm; align-items: baseline; padding: 3.5mm 0; border-bottom: 1px solid #e3eef5; }
+  .stepline::before { counter-increment: n; content: "0" counter(n); font-family: "Poppins", sans-serif; font-weight: 700; color: var(--cyan); font-size: 13pt; }
+  .stepline b { color: var(--navy); font-size: 10.5pt; }
+  .stepline span { font-size: 9.5pt; color: var(--soft); }
+
+  /* ---- destinations ---- */
+  .dest-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .dest { border-radius: 4mm; overflow: hidden; border: 1px solid #dce9f2; }
+  .dest .ph { height: 30mm; background-size: cover; background-position: center; }
+  .dest .tx { padding: 4mm 5mm 5mm; }
+  .dest .pays { font-size: 7.5pt; letter-spacing: .15em; text-transform: uppercase; color: var(--cyan); font-weight: 700; }
+  .dest h3 { font-size: 12.5pt; color: var(--navy); margin: 1mm 0; }
+  .dest p { font-size: 8.8pt; color: var(--soft); line-height: 1.5; }
+
+  /* ---- financement / contact ---- */
+  .fin { background: #eef9fc; border-radius: 4mm; padding: 7mm; margin-bottom: 6mm; }
+  .fin h3 { color: var(--navy); font-size: 12pt; margin-bottom: 2mm; }
+  .fin p, .fin li { font-size: 9.5pt; color: var(--soft); line-height: 1.6; }
+  .fin ul { padding-left: 5mm; margin-top: 2mm; }
+  .contact-page { background: linear-gradient(160deg, var(--navy) 0%, var(--ink) 80%); color: var(--ice); display: flex; flex-direction: column; justify-content: center; text-align: center; }
+  .contact-page h2 { color: #fff; font-size: 24pt; margin-bottom: 5mm; }
+  .contact-page p { font-size: 12pt; opacity: .85; }
+  .contact-page .big { font-family: "Poppins", sans-serif; font-size: 16pt; color: var(--cyan); margin-top: 8mm; }
+  .contact-page img { width: 55mm; margin: 0 auto 12mm; }
+</style>
+</head>
+<body>
+
+<!-- Couverture -->
+<div class="page cover">
+  <div class="dots"></div>
+  <div>
+    <p class="year">2026 — 2027</p>
+  </div>
+  <div>
+    <h1>Séjours pédagogiques à l'international pour CFA &amp; écoles</h1>
+    <p class="tag">Ouvrez l'international à vos apprentis — 11 destinations sur 4 continents, clés en main.</p>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end">
+    <img class="logo" src="../img/logo.png" alt="Learning Trip">
+    <p class="foot">www.learningtrip.fr · {{EMAIL}} · {{TEL}}</p>
+  </div>
+</div>
+
+<!-- Méthode -->
+<div class="page">
+  <div class="head"><span class="kicker">Notre méthode</span><img src="../img/logo.png" alt=""></div>
+  <h2 class="title">Un voyage qui transforme, pas un voyage scolaire de plus</h2>
+  <p class="lead">Chaque séjour Learning Trip est co-construit avec vos équipes pédagogiques et repose sur quatre piliers, alignés sur vos référentiels et vos objectifs de certification.</p>
+  <div class="pillars">
+    <div class="pillar"><h3>🌍 Découverte</h3><p>La ville comme terrain d'apprentissage : explorations par équipes, défis concrets, autonomie encadrée du premier au dernier jour.</p></div>
+    <div class="pillar"><h3>🤝 Mentorat</h3><p>Des rencontres préparées avec des professionnels sur place — souvent français, toujours inspirants — qui ouvrent perspectives et carnets d'adresses.</p></div>
+    <div class="pillar"><h3>🎓 Éducation</h3><p>Immersions en entreprise, ateliers interculturels et temps de mise en perspective qui produisent des compétences mesurables.</p></div>
+    <div class="pillar"><h3>✨ Culture</h3><p>Gastronomie, codes, patrimoine : le dépaysement qui désinhibe et fait grandir, vécu au quotidien plutôt qu'observé de loin.</p></div>
+  </div>
+  <div class="stats">
+    <div><b>150+</b><span>apprentis déjà partis</span></div>
+    <div><b>100%</b><span>de satisfaction</span></div>
+    <div><b>11</b><span>destinations</span></div>
+    <div><b>4</b><span>continents</span></div>
+  </div>
+  <div class="steps">
+    <div class="stepline"><div><b>On échange.</b> <span>Objectifs pédagogiques, groupe, budget : un rendez-vous pour cadrer.</span></div></div>
+    <div class="stepline"><div><b>On construit.</b> <span>Destination, programme et financements co-élaborés avec vos équipes.</span></div></div>
+    <div class="stepline"><div><b>Vous partez.</b> <span>Logistique, partenaires, encadrement local, application de suivi : tout est géré.</span></div></div>
+    <div class="stepline"><div><b>On capitalise.</b> <span>Bilan, restitution et valorisation auprès de vos financeurs.</span></div></div>
+  </div>
+</div>
+
+{{DEST_PAGES}}
+
+<!-- Financement + contact -->
+<div class="page">
+  <div class="head"><span class="kicker">Budget &amp; financement</span><img src="../img/logo.png" alt=""></div>
+  <h2 class="title">La mobilité est plus finançable que vous ne le pensez</h2>
+  <div class="fin">
+    <h3>Des leviers à activer</h3>
+    <ul>
+      <li><strong>Erasmus+</strong> — accréditations et consortiums pour l'enseignement et la formation professionnels.</li>
+      <li><strong>OPCO</strong> — prise en charge possible au titre du développement des compétences.</li>
+      <li><strong>Régions &amp; collectivités</strong> — dispositifs mobilité jeunes selon votre territoire.</li>
+      <li><strong>Fondations &amp; mécénat</strong> — nous vous aidons à monter les dossiers.</li>
+    </ul>
+  </div>
+  <div class="fin">
+    <h3>Notre engagement</h3>
+    <p>Un budget transparent, ajusté à votre groupe et à vos contraintes. Dites-nous votre enveloppe par apprenti : nous vous disons ce qui est possible — et nous le construisons ensemble.</p>
+  </div>
+  <div class="fin">
+    <h3>Testez votre budget en ligne</h3>
+    <p>Notre simulateur vous propose instantanément les destinations compatibles avec votre enveloppe : <strong>www.learningtrip.fr</strong></p>
+  </div>
+</div>
+
+<div class="page contact-page">
+  <img src="../img/logo.png" alt="Learning Trip">
+  <h2>Votre projet commence ici</h2>
+  <p>Un échange de 30 minutes suffit pour évaluer ce qui est possible<br>pour votre établissement.</p>
+  <p class="big">{{EMAIL}}<br>{{TEL}}</p>
+  <p style="margin-top:10mm;opacity:.6;font-size:10pt">www.learningtrip.fr</p>
+</div>
+
+</body>
+</html>

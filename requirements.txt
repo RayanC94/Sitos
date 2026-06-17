@@ -1,0 +1,9 @@
+# Dépendances Python pour la génération du site.
+# Le site final est 100 % statique : ces paquets ne servent qu'au BUILD.
+#
+#   python3 -m pip install -r requirements.txt
+#
+# Pillow : compression des photos (build_site.py) + téléchargement (fetch_photos.py).
+#          Optionnel — sans lui, le build fonctionne mais ne recompresse pas les
+#          photos de la brochure (fallback automatique).
+Pillow>=10.0

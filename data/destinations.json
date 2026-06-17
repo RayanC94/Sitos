@@ -1,0 +1,653 @@
+{
+  "site": {
+    "nom": "Learning Trip",
+    "url": "https://www.learningtrip.fr",
+    "tagline": "Ouvrez l'international à vos apprentis",
+    "email": "contact@learningtrip.fr",
+    "telephone": "07 98 09 78 65",
+    "telephone_intl": "+33798097865"
+  },
+  "themes": {
+    "tech": "Tech & innovation",
+    "business": "Business & entrepreneuriat",
+    "culture": "Culture & patrimoine",
+    "anglais": "Immersion anglophone"
+  },
+  "destinations": [
+    {
+      "slug": "montreal",
+      "referent": {
+        "nom": "Tony Gaetan",
+        "role": "Coordinateur — Référent séjour",
+        "photo": "tony.jpg",
+        "bio": "Présent du premier au dernier jour, il accompagne le groupe au quotidien et coordonne les rencontres avec nos partenaires sur place."
+      },
+      "ville": "Montréal",
+      "pays": "Canada",
+      "continent": "Amérique du Nord",
+      "baseline": "L'Amérique du Nord, en version originale francophone",
+      "pitch": "Une métropole nord-américaine où vos apprentis sont compris dès l'atterrissage — et bousculés dès le premier matin. Écosystème d'innovation parmi les plus denses du continent, culture du « oser essayer », et un quotidien qui mélange l'Amérique et l'Europe comme nulle part ailleurs.",
+      "lat": 45.5019,
+      "lng": -73.5674,
+      "tier": 2,
+      "vol": "≈ 7 h 30 depuis Paris",
+      "decalage": "−6 h",
+      "langues": "Français · Anglais",
+      "periode": "Avril à octobre",
+      "themes": [
+        "tech",
+        "business",
+        "anglais"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "La ville comme terrain de jeu",
+          "texte": "Du Vieux-Montréal aux fresques du Plateau, vos apprentis explorent la ville par équipes, avec des défis qui les obligent à parler, demander, se débrouiller."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "Des pros qui leur ressemblent",
+          "texte": "Des rencontres organisées avec des professionnels installés sur place — souvent partis de France avec le même bagage que vos apprentis."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "L'innovation en direct",
+          "texte": "Immersions dans des lieux où se fabrique la tech nord-américaine. On ne visite pas : on échange, on questionne, on repart avec des idées."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "Le choc tranquille",
+          "texte": "Poutine, cabane à sucre, hockey et accent québécois : un dépaysement joyeux, sans barrière de langue, qui désinhibe même les plus réservés."
+        }
+      ],
+      "moments": [
+        "Un lever de soleil sur la ville depuis le Mont-Royal, avant une journée d'immersion professionnelle.",
+        "Une soirée d'échanges avec des expatriés français qui racontent leur parcours sans filtre.",
+        "Un défi d'équipe dans les rues du Plateau dont vos apprentis parleront encore des mois après."
+      ],
+      "gallery": {
+        "titre": "Le séjour, vécu par nos étudiants",
+        "intro": "Pas une simulation : des photos prises pendant le séjour de la promotion Epitech à Montréal. C'est ça, un Learning Trip.",
+        "hero": {
+          "img": "alumni.jpg",
+          "alt": "La promotion Epitech au grand complet, réunie en amphithéâtre à Montréal avec Learning Trip",
+          "kicker": "Nos alumni",
+          "caption": "La promo Epitech au grand complet — 100 étudiants partis avec nous."
+        },
+        "photos": [
+          {
+            "img": "depart.jpg",
+            "alt": "Deux étudiants à l'aéroport au départ pour Montréal",
+            "caption": "Cap sur Montréal."
+          },
+          {
+            "img": "conference.jpg",
+            "alt": "Conférence en amphithéâtre pendant le séjour",
+            "caption": "Immersion dans l'écosystème tech montréalais."
+          },
+          {
+            "img": "visite.jpg",
+            "alt": "Présentation lors d'une visite d'entreprise à Montréal",
+            "caption": "Visite d'un partenaire local, en direct."
+          },
+          {
+            "img": "mentor.jpg",
+            "alt": "Un professionnel échange avec le groupe d'étudiants",
+            "caption": "Un échange sans filtre avec un pro du secteur."
+          },
+          {
+            "img": "echange.jpg",
+            "alt": "Deux étudiantes souriantes lors d'une visite",
+            "caption": "Des rencontres qui marquent."
+          },
+          {
+            "img": "cohesion.jpg",
+            "alt": "Le groupe réuni devant l'enseigne Prison Island Montréal",
+            "caption": "Cohésion de groupe à Prison Island Montréal."
+          },
+          {
+            "img": "energie.jpg",
+            "alt": "Une étudiante célèbre une victoire, bras levés",
+            "caption": "L'énergie d'un défi remporté."
+          },
+          {
+            "img": "arcade.jpg",
+            "alt": "Des étudiants jouent sur une borne d'arcade rétro",
+            "caption": "Le choc culturel, version arcade rétro."
+          }
+        ]
+      },
+      "meta_description": "Séjour pédagogique à Montréal pour CFA et écoles : immersion tech nord-américaine en français, rencontres professionnelles et défis urbains. Programme détaillé sur demande."
+    },
+    {
+      "slug": "dubai",
+      "referent": {
+        "nom": "Raoul Dey",
+        "role": "Coordinateur — Référent terrain",
+        "photo": "raoul.jpg",
+        "bio": "Toujours sur le terrain, il veille à la logistique et au bon déroulé du séjour, du premier au dernier jour."
+      },
+      "ville": "Dubaï",
+      "pays": "Émirats arabes unis",
+      "continent": "Moyen-Orient",
+      "baseline": "Le futur, en accéléré",
+      "pitch": "La ville qui s'est inventée en une génération. Vos apprentis y découvrent ce que devient un projet quand on enlève le mot « impossible » : tours records, quartiers entiers sortis du sable, et un carrefour mondial où 200 nationalités font des affaires ensemble.",
+      "lat": 25.2048,
+      "lng": 55.2708,
+      "tier": 4,
+      "vol": "≈ 7 h depuis Paris",
+      "decalage": "+2 h",
+      "langues": "Anglais · Arabe",
+      "periode": "Octobre à avril",
+      "themes": [
+        "tech",
+        "business"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "La démesure comme leçon",
+          "texte": "Du plus haut gratte-ciel du monde aux souks historiques de la Crique : deux siècles d'écart en vingt minutes de métro automatique."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "Dialogues avec ceux qui ont osé",
+          "texte": "Des temps d'échange privilégiés avec des professionnels français et internationaux installés dans le Golfe — parcours, codes culturels, opportunités."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "Immersions en entreprise",
+          "texte": "Notre programme signature : des portes qui s'ouvrent sur des environnements de travail multiculturels, suivies d'ateliers de mise en perspective."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "L'Orient, le vrai",
+          "texte": "Désert au coucher du soleil, hospitalité émiratie, quartiers historiques : au-delà des tours de verre, une culture qui surprend tous les groupes."
+        }
+      ],
+      "moments": [
+        "La skyline entière qui s'allume, vue d'un point dont nous gardons le secret.",
+        "Un atelier interculturel qui change la façon dont vos apprentis se présentent en entretien.",
+        "Le silence du désert après l'énergie de la ville — le moment où le groupe se soude."
+      ],
+      "meta_description": "Séjour pédagogique à Dubaï pour CFA et écoles : immersions en entreprise, dialogues professionnels et ateliers interculturels au cœur du Golfe. Programme détaillé sur demande."
+    },
+    {
+      "slug": "tokyo",
+      "referent": {
+        "nom": "Marco Chateaubon",
+        "role": "Relations étudiants — Référent séjour",
+        "photo": "marco.jpg",
+        "bio": "Au contact des étudiants en permanence, il accompagne le groupe au quotidien et fait le lien avec nos partenaires locaux."
+      },
+      "ville": "Tokyo",
+      "pays": "Japon",
+      "continent": "Asie",
+      "baseline": "La précision érigée en culture",
+      "pitch": "La plus grande métropole du monde, et pourtant tout y fonctionne à la seconde près. Vos apprentis découvrent un rapport au travail, au détail et au collectif qui les marquera durablement — c'est le voyage dont on revient différent.",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "tier": 6,
+      "vol": "≈ 14 h depuis Paris",
+      "decalage": "+7 h",
+      "langues": "Japonais · Anglais",
+      "periode": "Mars à juin · Octobre à novembre",
+      "themes": [
+        "tech",
+        "culture"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "Du temple au néon",
+          "texte": "Sanctuaires silencieux le matin, carrefour de Shibuya le soir : Tokyo apprend à vos apprentis que tradition et hypermodernité ne s'opposent pas."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "Comprendre les codes",
+          "texte": "Des rencontres préparées avec des professionnels francophones du Japon, pour décoder une culture du travail fascinante — et très exigeante."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "L'obsession du geste juste",
+          "texte": "Ateliers et visites choisis pour montrer ce que « qualité » veut dire au Japon, de l'artisanat séculaire à la robotique."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "L'omotenashi",
+          "texte": "L'art japonais de l'attention à l'autre, vécu au quotidien : une leçon de savoir-être qui vaut tous les cours de posture professionnelle."
+        }
+      ],
+      "moments": [
+        "La traversée de Shibuya au milieu de 3 000 personnes — sans une bousculade.",
+        "Un repas dont vos apprentis ne connaîtront le contenu qu'en s'asseyant.",
+        "Le shinkansen qui entre en gare à la minute exacte, et ce que ça raconte d'un pays."
+      ],
+      "meta_description": "Séjour pédagogique à Tokyo pour CFA et écoles : culture de la précision, rencontres professionnelles francophones et immersion entre tradition et robotique. Programme sur demande."
+    },
+    {
+      "slug": "seoul",
+      "referent": {
+        "nom": "Amine Fadel",
+        "role": "Coordinateur — Référent séjour",
+        "photo": "amine.jpg",
+        "bio": "Présent du premier au dernier jour, il accompagne le groupe au quotidien et coordonne les rencontres avec nos partenaires sur place."
+      },
+      "ville": "Séoul",
+      "pays": "Corée du Sud",
+      "continent": "Asie",
+      "baseline": "La capitale de la K-innovation",
+      "pitch": "Le pays qui est passé de la reconstruction au top 10 mondial en deux générations. Vos apprentis plongent dans une culture où l'ambition est une politesse, entre palais royaux, quartiers créatifs et géants technologiques omniprésents.",
+      "lat": 37.5665,
+      "lng": 126.978,
+      "tier": 6,
+      "vol": "≈ 13 h depuis Paris",
+      "decalage": "+7 h",
+      "langues": "Coréen · Anglais",
+      "periode": "Avril à juin · Septembre à novembre",
+      "themes": [
+        "tech",
+        "culture"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "600 ans en une rue",
+          "texte": "Des hanoks de Bukchon aux écrans géants de Gangnam : vos apprentis mesurent physiquement la vitesse à laquelle un pays peut se réinventer."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "Voix de l'intérieur",
+          "texte": "Des échanges organisés avec des professionnels qui travaillent dans l'écosystème coréen et en décryptent les codes, les forces et les revers."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "La tech au quotidien",
+          "texte": "Paiement, transport, commerce, divertissement : un cas d'école grandeur nature de ce qu'est un pays intégralement numérisé."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "Au-delà de la K-pop",
+          "texte": "Cérémonies, gastronomie, étiquette : la culture coréenne se mérite, et vos apprentis apprennent à la respecter pour mieux s'y faire accueillir."
+        }
+      ],
+      "moments": [
+        "Le contraste entre un palais du XIVᵉ siècle et le quartier d'affaires qui le surplombe.",
+        "Un atelier dont le thème surprend tous les groupes — et qu'on ne dévoile jamais à l'avance.",
+        "Une soirée dans un marché de nuit, par équipes, avec mission de commander en coréen."
+      ],
+      "meta_description": "Séjour pédagogique à Séoul pour CFA et écoles : immersion dans l'écosystème tech coréen, décryptage culturel et rencontres professionnelles. Programme détaillé sur demande."
+    },
+    {
+      "slug": "kuala-lumpur",
+      "referent": {
+        "nom": "Tony Gaetan",
+        "role": "Coordinateur — Référent séjour",
+        "photo": "tony.jpg",
+        "bio": "Présent du premier au dernier jour, il accompagne le groupe au quotidien et coordonne les rencontres avec nos partenaires sur place."
+      },
+      "ville": "Kuala Lumpur",
+      "pays": "Malaisie",
+      "continent": "Asie",
+      "baseline": "L'Asie multiculturelle, en anglais",
+      "pitch": "Trois cultures — malaise, chinoise, indienne — qui travaillent, mangent et innovent ensemble, en anglais. Pour des apprentis, c'est le terrain d'entraînement idéal : l'Asie qui impressionne, sans la barrière de la langue.",
+      "lat": 3.139,
+      "lng": 101.6869,
+      "tier": 4,
+      "vol": "≈ 13 h depuis Paris",
+      "decalage": "+6 h",
+      "langues": "Anglais · Malais",
+      "periode": "Toute l'année",
+      "themes": [
+        "business",
+        "anglais"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "Trois mondes, une ville",
+          "texte": "Mosquées, temples hindous et pagodes dans le même kilomètre carré : la diversité n'est pas un concept ici, c'est l'organisation de la ville."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "L'anglais qui débloque",
+          "texte": "Chaque interaction se fait en anglais — commerces, rencontres, défis. Le niveau du groupe fait un bond mesurable en une semaine."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "Hub d'Asie du Sud-Est",
+          "texte": "Comprendre pourquoi les entreprises du monde entier choisissent la Malaisie comme porte d'entrée vers 700 millions de consommateurs."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "La table comme langage",
+          "texte": "Street food indienne le midi, dim sum le soir : la gastronomie comme fil rouge pour comprendre un pays-mosaïque."
+        }
+      ],
+      "moments": [
+        "Les tours Petronas qui apparaissent au détour d'une rue — l'effet est garanti à chaque groupe.",
+        "Un déjeuner commandé entièrement en anglais par les apprentis, sans aide.",
+        "Une rencontre dont le lieu, en hauteur, fait autant d'effet que le contenu."
+      ],
+      "meta_description": "Séjour pédagogique à Kuala Lumpur pour CFA et écoles : immersion anglophone totale, découverte d'un hub d'affaires multiculturel d'Asie du Sud-Est. Programme sur demande."
+    },
+    {
+      "slug": "shanghai",
+      "referent": {
+        "nom": "Raoul Dey",
+        "role": "Coordinateur — Référent terrain",
+        "photo": "raoul.jpg",
+        "bio": "Toujours sur le terrain, il veille à la logistique et au bon déroulé du séjour, du premier au dernier jour."
+      },
+      "ville": "Shanghai",
+      "pays": "Chine",
+      "continent": "Asie",
+      "baseline": "La mégalopole qui donne la mesure du siècle",
+      "pitch": "On peut lire cent articles sur la Chine ; rien ne remplace dix minutes sur le Bund face à Pudong. Vos apprentis prennent la mesure physique de la deuxième économie mondiale — son échelle, sa vitesse, son intensité.",
+      "lat": 31.2304,
+      "lng": 121.4737,
+      "tier": 5,
+      "vol": "≈ 12 h depuis Paris",
+      "decalage": "+6 h",
+      "langues": "Mandarin · Anglais",
+      "periode": "Mars à juin · Septembre à novembre",
+      "themes": [
+        "tech",
+        "business"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "L'échelle XXL",
+          "texte": "Skyline de Pudong, métro de 800 km, maglev à 430 km/h : tout, ici, recalibre ce que vos apprentis croyaient être « grand »."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "La Chine expliquée par ceux qui y vivent",
+          "texte": "Des rencontres avec des professionnels français implantés sur place, pour passer des clichés à la réalité du terrain."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "Le laboratoire du commerce",
+          "texte": "Paiement mobile universel, livraison en 30 minutes, magasins sans caisse : le futur du retail s'observe ici, pas dans les rapports de tendances."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "La Chine éternelle",
+          "texte": "Jardins classiques, maisons de thé, vieux lilongs : derrière la course à la modernité, une civilisation cinq fois millénaire à hauteur de regard."
+        }
+      ],
+      "moments": [
+        "La première vision du Bund à la tombée de la nuit — le moment photo du séjour.",
+        "Une démonstration de paiement et de commerce 100 % mobile qui laisse le groupe sans voix.",
+        "Un thé dans un jardin Ming, à dix minutes des tours de 600 mètres."
+      ],
+      "meta_description": "Séjour pédagogique à Shanghai pour CFA et écoles : prendre la mesure de la deuxième économie mondiale, immersion commerce et tech. Programme détaillé sur demande."
+    },
+    {
+      "slug": "taipei",
+      "referent": {
+        "nom": "Marco Chateaubon",
+        "role": "Relations étudiants — Référent séjour",
+        "photo": "marco.jpg",
+        "bio": "Au contact des étudiants en permanence, il accompagne le groupe au quotidien et fait le lien avec nos partenaires locaux."
+      },
+      "ville": "Taipei",
+      "pays": "Taïwan",
+      "continent": "Asie",
+      "baseline": "La petite île dont dépend toute la tech mondiale",
+      "pitch": "90 % des puces les plus avancées du monde sortent d'ici. Taipei offre à vos apprentis une leçon de géo-économie grandeur nature, dans l'une des villes les plus sûres, accueillantes et gourmandes d'Asie.",
+      "lat": 25.033,
+      "lng": 121.5654,
+      "tier": 4,
+      "vol": "≈ 14 h depuis Paris",
+      "decalage": "+6 h",
+      "langues": "Mandarin · Anglais",
+      "periode": "Octobre à avril",
+      "themes": [
+        "tech",
+        "culture"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "Le cœur des puces",
+          "texte": "Comprendre, sur place, pourquoi un carré de silicium taïwanais conditionne smartphones, voitures et data centers du monde entier."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "Rencontres à hauteur d'apprenti",
+          "texte": "Des professionnels de l'écosystème tech local partagent leur quotidien, leurs parcours et leur vision — questions directes bienvenues."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "Une démocratie numérique",
+          "texte": "Taïwan invente des outils de participation citoyenne en ligne uniques au monde : de quoi nourrir les débats au retour."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "Night markets et sources chaudes",
+          "texte": "La douceur de vivre taïwanaise — temples, marchés de nuit, montagnes à 30 minutes — fait de l'intensité du programme un plaisir."
+        }
+      ],
+      "moments": [
+        "Taipei 101 vu depuis un sentier de montagne, au coucher du soleil.",
+        "Un défi street food dans un marché de nuit, par équipes, budget limité.",
+        "Une conversation avec un professionnel du silicium qui rend la géopolitique soudain très concrète."
+      ],
+      "meta_description": "Séjour pédagogique à Taipei pour CFA et écoles : au cœur de l'industrie mondiale des semi-conducteurs, immersion tech et culture taïwanaise. Programme sur demande."
+    },
+    {
+      "slug": "ho-chi-minh",
+      "referent": {
+        "nom": "Amine Fadel",
+        "role": "Coordinateur — Référent séjour",
+        "photo": "amine.jpg",
+        "bio": "Présent du premier au dernier jour, il accompagne le groupe au quotidien et coordonne les rencontres avec nos partenaires sur place."
+      },
+      "ville": "Hô Chi Minh-Ville",
+      "pays": "Vietnam",
+      "continent": "Asie",
+      "baseline": "L'énergie brute de l'Asie qui monte",
+      "pitch": "Huit millions de scooters, une croissance parmi les plus fortes du monde, et une jeunesse qui entreprend à toute vitesse. Vos apprentis découvrent un pays en pleine ascension — et une histoire intimement liée à la France.",
+      "lat": 10.7769,
+      "lng": 106.7009,
+      "tier": 3,
+      "vol": "≈ 13 h depuis Paris",
+      "decalage": "+5 h",
+      "langues": "Vietnamien · Anglais",
+      "periode": "Novembre à avril",
+      "themes": [
+        "business",
+        "culture"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "La ville à 30 km/h",
+          "texte": "Traverser une rue de Saïgon est une leçon de confiance ; le flux continu de la ville, une leçon d'économie en mouvement."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "Entrepreneurs de la nouvelle vague",
+          "texte": "Des rencontres avec ceux qui construisent le Vietnam de demain — souvent à peine plus âgés que vos apprentis."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "L'atelier du monde, version 2.0",
+          "texte": "Comprendre comment le pays attire les chaînes de production mondiales, et ce que cela change pour l'Europe."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "Mémoires croisées",
+          "texte": "Architecture coloniale, bánh mì et cà phê sữa đá : l'héritage franco-vietnamien rend ce voyage singulièrement émouvant pour des groupes français."
+        }
+      ],
+      "moments": [
+        "Le ballet des scooters vu d'un rooftop, un jus de coco à la main.",
+        "Un échange avec un entrepreneur local dont le parcours force le respect du groupe.",
+        "Une matinée dans un marché où l'on négocie tout — exercice imposé."
+      ],
+      "meta_description": "Séjour pédagogique à Hô Chi Minh-Ville pour CFA et écoles : immersion dans l'économie vietnamienne en plein boom et héritage franco-vietnamien. Programme sur demande."
+    },
+    {
+      "slug": "seville",
+      "referent": {
+        "nom": "Ernesto Sarrión",
+        "role": "Directeur ONECO — Référent local",
+        "photo": "ernesto.jpg",
+        "bio": "Référent local à Séville depuis 1997, il organise et supervise chaque séjour sur le terrain, de l'arrivée au départ."
+      },
+      "ville": "Séville",
+      "pays": "Espagne",
+      "continent": "Europe",
+      "baseline": "L'Andalousie, l'Europe qui se vit dehors",
+      "pitch": "Patrimoine UNESCO, soleil dix mois sur douze et un art de vivre qui désarme : Séville est la porte d'entrée idéale vers la mobilité internationale. Le dépaysement est total, à 2 h 30 de Paris.",
+      "lat": 37.3891,
+      "lng": -5.9845,
+      "tier": 1,
+      "vol": "≈ 2 h 30 depuis Paris",
+      "decalage": "Aucun",
+      "langues": "Espagnol",
+      "periode": "Février à juin · Septembre à novembre",
+      "themes": [
+        "culture"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "Une ville-musée vivante",
+          "texte": "Alcázar, Giralda, ruelles de Santa Cruz : vos apprentis évoluent dans mille ans d'histoire — et apprennent à la raconter."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "L'espagnol qui ose",
+          "texte": "Des interactions quotidiennes préparées pour faire parler tout le monde, même les débutants. L'Andalousie est le meilleur professeur de confiance en soi."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "L'Europe en pratique",
+          "texte": "Première mobilité européenne pour beaucoup : gestion de budget, transports, autonomie — les compétences de base du travailleur mobile."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "Flamenco et tapas",
+          "texte": "Une culture qui se danse, se mange et se partage : l'immersion la plus joyeuse de notre catalogue."
+        }
+      ],
+      "moments": [
+        "La Plaza de España au soleil couchant, quand les azulejos prennent feu.",
+        "Une soirée flamenco dont l'intensité surprend même les plus blasés.",
+        "Un défi tapas par équipes dans le quartier de Triana."
+      ],
+      "meta_description": "Séjour pédagogique à Séville pour CFA et écoles : première mobilité européenne idéale, immersion espagnole, patrimoine UNESCO et art de vivre andalou. Programme sur demande."
+    },
+    {
+      "slug": "tanger",
+      "referent": {
+        "nom": "Hamza",
+        "role": "Référent local",
+        "photo": "hamza.jpg",
+        "bio": "Notre référent sur place accompagne le groupe au quotidien et coordonne les rencontres avec nos partenaires locaux."
+      },
+      "ville": "Tanger",
+      "pays": "Maroc",
+      "continent": "Afrique",
+      "baseline": "La porte entre deux continents",
+      "pitch": "Depuis sa baie, on voit l'Europe. Tanger, c'est le détroit de Gibraltar, un port parmi les plus stratégiques de la Méditerranée et une ville-monde qui a toujours mélangé les cultures. Une leçon de géographie économique à 3 h de Paris.",
+      "lat": 35.7595,
+      "lng": -5.834,
+      "tier": 1,
+      "vol": "≈ 3 h depuis Paris",
+      "decalage": "−1 h",
+      "langues": "Français · Arabe · Espagnol",
+      "periode": "Toute l'année",
+      "themes": [
+        "business",
+        "culture"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "Deux continents dans le regard",
+          "texte": "Du cap Spartel, vos apprentis voient l'Atlantique rencontrer la Méditerranée — et l'Afrique regarder l'Europe. Personne n'oublie ce point de vue."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "Le français en partage",
+          "texte": "Des rencontres professionnelles facilitées par la francophonie : ici, vos apprentis échangent sans barrière avec un monde très différent du leur."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "Un hub qui change la donne",
+          "texte": "Comprendre comment une ville devient en vingt ans une plateforme industrielle et logistique entre trois continents."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "Médina, thé et hospitalité",
+          "texte": "L'art de l'accueil marocain, les ruelles blanches et bleues, le thé à la menthe qui scelle chaque rencontre : une immersion qui rend humble et curieux."
+        }
+      ],
+      "moments": [
+        "Le thé à la menthe face au détroit, l'Espagne en ligne d'horizon.",
+        "Une négociation dans la médina, en français, en arabe et avec les mains.",
+        "Un coucher de soleil là où deux mers se rencontrent."
+      ],
+      "meta_description": "Séjour pédagogique à Tanger pour CFA et écoles : entre deux continents, immersion francophone, hub industriel et culture marocaine. Programme détaillé sur demande."
+    },
+    {
+      "slug": "istanbul",
+      "referent": {
+        "nom": "Hamza",
+        "role": "Référent local",
+        "photo": "hamza.jpg",
+        "bio": "Notre référent sur place accompagne le groupe au quotidien et coordonne les rencontres avec nos partenaires locaux."
+      },
+      "ville": "Istanbul",
+      "pays": "Turquie",
+      "continent": "Europe / Asie",
+      "baseline": "Un pied en Europe, l'autre en Asie",
+      "pitch": "La seule ville au monde posée sur deux continents. Bazars millénaires et quartiers d'affaires, ferries du Bosphore et hub aérien planétaire : Istanbul apprend à vos apprentis que le commerce est d'abord une histoire de rencontres.",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "tier": 1,
+      "vol": "≈ 3 h 30 depuis Paris",
+      "decalage": "+1 h",
+      "langues": "Turc · Anglais",
+      "periode": "Mars à juin · Septembre à novembre",
+      "themes": [
+        "business",
+        "culture"
+      ],
+      "experiences": [
+        {
+          "pilier": "Découverte",
+          "titre": "Traverser un continent en ferry",
+          "texte": "Déjeuner en Europe, dîner en Asie : le Bosphore comme salle de classe, et la géographie qui devient enfin concrète."
+        },
+        {
+          "pilier": "Mentorat",
+          "titre": "L'art de la relation",
+          "texte": "Des rencontres avec des professionnels stambouliotes pour qui chaque affaire commence par un çay — une leçon de commerce relationnel."
+        },
+        {
+          "pilier": "Éducation",
+          "titre": "4 000 boutiques, une école",
+          "texte": "Le Grand Bazar comme cas d'étude : négociation, logistique, flux — le commerce mondial avant les conteneurs, et toujours vivant."
+        },
+        {
+          "pilier": "Culture",
+          "titre": "Byzance, Constantinople, Istanbul",
+          "texte": "Sainte-Sophie, Mosquée bleue, citernes souterraines : trois empires superposés, à hauteur de regard."
+        }
+      ],
+      "moments": [
+        "L'appel à la prière qui résonne sur le Bosphore au coucher du soleil.",
+        "Une négociation au Grand Bazar préparée en atelier le matin même.",
+        "Un simit partagé sur le ferry, entre deux continents."
+      ],
+      "meta_description": "Séjour pédagogique à Istanbul pour CFA et écoles : la ville sur deux continents, école de commerce relationnel et patrimoine de trois empires. Programme sur demande."
+    }
+  ]
+}

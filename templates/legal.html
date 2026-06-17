@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales &amp; confidentialité — Learning Trip</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header class="nav solid">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/img/logo.png" alt="Learning Trip"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">← Retour au site</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section" style="padding-top:calc(var(--nav-h) + 3rem)">
+  <div class="container legal">
+    <h1>Mentions légales &amp; confidentialité</h1>
+
+    <h2>Éditeur</h2>
+    <p>Learning Trip — contact : <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> · {{TEL}}.<br>
+    <em>À compléter : raison sociale, forme juridique, SIREN, adresse du siège, directeur de la publication, hébergeur.</em></p>
+
+    <h2>Données personnelles (RGPD)</h2>
+    <p>Les formulaires de ce site (brochure, rappel conseiller, demande de programme) collectent uniquement les données nécessaires au traitement de votre demande : nom, établissement, e-mail, téléphone et message.</p>
+    <ul>
+      <li><strong>Finalité :</strong> répondre à votre demande et vous accompagner dans votre projet de mobilité. Aucune autre utilisation, aucune cession à des tiers.</li>
+      <li><strong>Base légale :</strong> votre consentement explicite (case à cocher).</li>
+      <li><strong>Hébergement :</strong> données stockées dans l'Union européenne (Irlande).</li>
+      <li><strong>Durée de conservation :</strong> 24 mois après le dernier contact.</li>
+      <li><strong>Vos droits :</strong> accès, rectification, effacement, opposition — sur simple demande à <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>.</li>
+    </ul>
+    <p>Ce site n'utilise ni cookie de suivi, ni traceur publicitaire.</p>
+
+    <h2>Crédits photographiques</h2>
+    <p>Photographies des destinations issues de Wikimedia Commons :</p>
+    <ul>
+{{CREDITS_HTML}}
+    </ul>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>L'ensemble des contenus de ce site (textes, programmes, marque Learning Trip) est protégé. Toute reproduction sans autorisation est interdite.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none;padding-top:0">
+    <span>© <span id="year"></span> Learning Trip</span>
+    <span><a href="index.html">learningtrip.fr</a></span>
+  </div>
+</footer>
+
+<script>window.LT_BASE = "";</script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/destinations.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

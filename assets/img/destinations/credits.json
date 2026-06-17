@@ -1,0 +1,68 @@
+{
+  "dubai": {
+    "title": "Burj Khalifa 2021.jpg",
+    "page": "https://en.wikipedia.org/wiki/File:Burj_Khalifa_2021.jpg",
+    "author": "Francisco Anzola",
+    "license": "CC-BY-2.0"
+  },
+  "montreal": {
+    "title": "File:Montreal night view.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Montreal_night_view.jpg",
+    "author": "Paolostefano1412",
+    "license": "CC BY-SA 3.0"
+  },
+  "tokyo": {
+    "title": "File:Tokyo Shibuya Scramble Crossing 2018-10-09.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg",
+    "author": "Benh LIEU SONG (Flickr)",
+    "license": "CC BY-SA 2.0"
+  },
+  "seoul": {
+    "title": "File:Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg",
+    "author": "Frank Schulenburg",
+    "license": "CC BY-SA 4.0"
+  },
+  "kuala-lumpur": {
+    "title": "File:The Twins SE Asia 2019 (49171985716).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Twins_SE_Asia_2019_(49171985716).jpg",
+    "author": "James Kerwin from Tbilisi",
+    "license": "CC BY 2.0"
+  },
+  "shanghai": {
+    "title": "File:Pudong Shanghai November 2017 panorama.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0"
+  },
+  "taipei": {
+    "title": "File:Taipei Taiwan Taipei-101-Tower-01.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
+    "author": "CEphoto, Uwe Aranas",
+    "license": "CC BY-SA 3.0"
+  },
+  "ho-chi-minh": {
+    "title": "File:Vista de Ciudad Ho Chi Minh desde Bitexco Financial Tower, Vietnam, 2013-08-14, DD 11.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_11.JPG",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0"
+  },
+  "seville": {
+    "title": "File:Seville, Plaza de España (38625005691) (edited).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Seville,_Plaza_de_Espa%C3%B1a_(38625005691)_(edited).jpg",
+    "author": "Dmitry Dzhus from London",
+    "license": "CC BY 2.0"
+  },
+  "tanger": {
+    "title": "Tanger cor.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tanger_cor.jpg",
+    "author": "Ifni95",
+    "license": "CC BY-SA 4.0"
+  },
+  "istanbul": {
+    "title": "File:Hagia Sophia Mars 2013.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 3.0"
+  }
+}
