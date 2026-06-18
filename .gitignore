@@ -14,3 +14,11 @@ supabase/.temp/
 FlashFare Front/
 swiss/
 node_modules/
+
+# Sources lourdes / fichiers de travail non publiés (servis ni par le site ni par Netlify)
+assets/MehdiVideo.mp4
+assets/Photo Referent/
+MehdiVideo.srt
+MehdiVideo-transcription.md
+# Brochure « all destinations » : 125 Mo, au-dessus de la limite GitHub (100 Mo)
+assets/brochure/Brochure  Learning Trip all destinations.pdf

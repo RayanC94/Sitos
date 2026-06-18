@@ -221,6 +221,52 @@ h1, h2, h3, h4 { font-family: var(--font-title); line-height: 1.15; color: var(-
 }
 
 /* --------------------------------------------------------------------------
+   Accès rapide — liens utiles (cercles d'icônes cliquables)
+   -------------------------------------------------------------------------- */
+.keylinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: clamp(1.4rem, 4vw, 2.4rem);
+  max-width: 900px; margin: 0 auto;
+}
+.keylink {
+  display: flex; flex-direction: column; align-items: center; gap: 1.05rem;
+  text-align: center; text-decoration: none;
+  background: none; border: none; padding: 0; cursor: pointer;
+  font-family: inherit;
+}
+.keylink .kl-circle {
+  width: 118px; height: 118px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  color: var(--navy);
+  box-shadow: 0 16px 36px -22px rgba(2, 27, 48, 0.5);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.3, 1), box-shadow 0.3s, border-color 0.3s, background 0.3s, color 0.3s;
+}
+.keylink .kl-circle svg { width: 42px; height: 42px; }
+.keylink:hover .kl-circle,
+.keylink:focus-visible .kl-circle {
+  transform: translateY(-6px);
+  border-color: var(--cyan);
+  background: linear-gradient(135deg, var(--ice), #e8fbff);
+  box-shadow: 0 24px 46px -20px rgba(2, 27, 48, 0.42);
+}
+.keylink:focus-visible { outline: none; }
+.keylink:focus-visible .kl-circle { outline: 3px solid var(--cyan); outline-offset: 4px; }
+.keylink .kl-label {
+  font-family: var(--font-title); font-weight: 600; font-size: 1.02rem;
+  color: var(--navy); letter-spacing: -0.01em; transition: color 0.25s;
+}
+.keylink:hover .kl-label,
+.keylink:focus-visible .kl-label { color: var(--cyan-dark); }
+@media (max-width: 600px) {
+  .keylink .kl-circle { width: 96px; height: 96px; }
+  .keylink .kl-circle svg { width: 36px; height: 36px; }
+  .keylink .kl-label { font-size: 0.95rem; }
+}
+
+/* --------------------------------------------------------------------------
    Destinations
    -------------------------------------------------------------------------- */
 .chips { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
@@ -373,19 +419,29 @@ input[type="range"].sim-range::-moz-range-thumb {
 .brochure-stack { position: relative; height: 380px; perspective: 1000px; }
 .brochure-cover {
   position: absolute; width: 250px; height: 350px; border-radius: 12px;
-  left: 50%; top: 50%;
+  left: 50%; top: 50%; overflow: hidden;
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 70%);
+  background-size: cover; background-position: center;
   box-shadow: 0 30px 60px -15px rgba(2, 27, 48, 0.5);
   display: flex; flex-direction: column; justify-content: space-between;
   padding: 1.4rem; color: var(--ice);
   transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.3, 1);
 }
-.brochure-cover img { width: 120px; }
-.brochure-cover .bc-title { font-family: var(--font-title); font-weight: 700; font-size: 1.3rem; line-height: 1.25; color: var(--white); }
-.brochure-cover .bc-year { font-size: 0.8rem; letter-spacing: 0.15em; color: var(--cyan); }
-.brochure-cover:nth-child(1) { transform: translate(-78%, -48%) rotate(-9deg); background: linear-gradient(160deg, #0a5285, var(--navy)); }
+.brochure-cover .bc-year { position: relative; z-index: 1; font-size: 0.8rem; letter-spacing: 0.15em; color: var(--cyan); }
+/* Maquettes "brochure par région" : photo + voile dégradé */
+.bc-photo::after {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(180deg, rgba(2,27,48,0.15) 0%, rgba(2,27,48,0.55) 55%, rgba(2,27,48,0.92) 100%);
+}
+.bc-foot { position: relative; z-index: 1; display: flex; align-items: flex-end; justify-content: space-between; gap: 0.6rem; }
+.bc-region { font-family: var(--font-title); font-weight: 700; font-size: 1.6rem; line-height: 1.1; color: var(--white); }
+.bc-logo { width: 78px; height: auto; }
+/* Carte centrale : vraie couverture de la brochure (PDF) */
+.bc-real { padding: 0; }
+.bc-real-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.brochure-cover:nth-child(1) { transform: translate(-78%, -48%) rotate(-9deg); }
 .brochure-cover:nth-child(2) { transform: translate(-50%, -52%) rotate(-1deg); z-index: 2; }
-.brochure-cover:nth-child(3) { transform: translate(-22%, -47%) rotate(8deg); background: linear-gradient(160deg, var(--navy-deep), var(--ink)); }
+.brochure-cover:nth-child(3) { transform: translate(-22%, -47%) rotate(8deg); }
 .brochure-stack:hover .brochure-cover:nth-child(1) { transform: translate(-86%, -50%) rotate(-13deg); }
 .brochure-stack:hover .brochure-cover:nth-child(2) { transform: translate(-50%, -56%) rotate(0deg); }
 .brochure-stack:hover .brochure-cover:nth-child(3) { transform: translate(-14%, -49%) rotate(12deg); }
@@ -610,6 +666,88 @@ dialog.lt-modal::backdrop { background: rgba(2, 27, 48, 0.7); backdrop-filter: b
 }
 
 /* --------------------------------------------------------------------------
+   Mosaïque « La vie d'un Learning Trip » (accueil) — bento éditorial
+   -------------------------------------------------------------------------- */
+.gallery-grid.mosaic {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: clamp(150px, 15vw, 210px);
+  grid-auto-flow: row dense;
+  gap: 0.8rem;
+}
+.gallery-grid.mosaic .gallery-item {
+  aspect-ratio: auto;
+  box-shadow: 0 14px 40px -22px rgba(2, 27, 48, 0.5);
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.3, 1),
+              box-shadow 0.5s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+.gallery-grid.mosaic .gallery-item--big  { grid-column: span 2; grid-row: span 2; }
+.gallery-grid.mosaic .gallery-item--wide { grid-column: span 2; }
+
+/* voile coloré qui s'allume au survol */
+.gallery-grid.mosaic .gallery-item::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(125deg, rgba(15, 168, 201, 0.22), rgba(5, 60, 100, 0.08) 60%);
+  opacity: 0; transition: opacity 0.5s ease;
+}
+.gallery-grid.mosaic .gallery-item figcaption {
+  z-index: 2;
+  padding: 2.4rem 1.05rem 1rem;
+  font-family: var(--font-title); font-weight: 500; letter-spacing: 0.01em;
+  display: flex; align-items: center; gap: 0.55rem;
+}
+/* petit trait glacier qui se déploie au survol */
+.gallery-grid.mosaic .gallery-item figcaption::before {
+  content: ""; flex: 0 0 auto;
+  width: 0; height: 2px; border-radius: 2px; background: var(--cyan);
+  transition: width 0.45s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+.gallery-grid.mosaic .gallery-item--big figcaption {
+  font-size: 1.2rem; padding: 2.9rem 1.45rem 1.25rem;
+}
+
+@media (hover: hover) {
+  .gallery-grid.mosaic .gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 64px -26px rgba(2, 27, 48, 0.62);
+  }
+  .gallery-grid.mosaic .gallery-item:hover::after { opacity: 1; }
+  .gallery-grid.mosaic .gallery-item:hover figcaption::before { width: 26px; }
+  .gallery-grid.mosaic .gallery-item--big:hover figcaption::before { width: 36px; }
+}
+
+/* apparition en cascade des tuiles */
+@media (prefers-reduced-motion: no-preference) {
+  .gallery-grid.mosaic.in .gallery-item {
+    animation: tileRise 0.6s cubic-bezier(0.2, 0.8, 0.3, 1) backwards;
+  }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(1) { animation-delay: 0.04s; }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(2) { animation-delay: 0.1s; }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(3) { animation-delay: 0.16s; }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(4) { animation-delay: 0.22s; }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(5) { animation-delay: 0.28s; }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(6) { animation-delay: 0.34s; }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(7) { animation-delay: 0.4s; }
+  .gallery-grid.mosaic.in .gallery-item:nth-child(8) { animation-delay: 0.46s; }
+}
+@keyframes tileRise {
+  from { opacity: 0; transform: translateY(24px) scale(0.985); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (max-width: 900px) {
+  .gallery-grid.mosaic {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: clamp(160px, 30vw, 220px);
+  }
+}
+@media (max-width: 520px) {
+  .gallery-grid.mosaic { grid-template-columns: 1fr; grid-auto-rows: auto; }
+  .gallery-grid.mosaic .gallery-item { aspect-ratio: 4 / 3; }
+  .gallery-grid.mosaic .gallery-item--big,
+  .gallery-grid.mosaic .gallery-item--wide { grid-column: auto; grid-row: auto; }
+}
+
+/* --------------------------------------------------------------------------
    Référent sur place (page séjour)
    -------------------------------------------------------------------------- */
 .referent {
@@ -641,10 +779,10 @@ dialog.lt-modal::backdrop { background: rgba(2, 27, 48, 0.7); backdrop-filter: b
    Équipe (accueil)
    -------------------------------------------------------------------------- */
 .team-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem 1.2rem; max-width: 880px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 2.6rem 2.2rem; max-width: 800px; margin: 0 auto;
 }
-.team-member { text-align: center; }
+.team-member { text-align: center; width: 160px; }
 .team-member img {
   width: 122px; height: 122px; border-radius: 50%;
   object-fit: cover; object-position: center top;
@@ -682,6 +820,36 @@ dialog.lt-modal::backdrop { background: rgba(2, 27, 48, 0.7); backdrop-filter: b
 .partners-note { text-align: center; margin-top: 1.6rem; }
 .partners-note a { color: var(--cyan-dark); font-weight: 500; text-decoration: none; }
 .partners-note a:hover { text-decoration: underline; }
+
+/* Banderole de logos défilante (marquee continu) */
+.logo-marquee {
+  position: relative; overflow: hidden; width: 100%;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+.logo-track {
+  display: flex; width: max-content;
+  animation: logoScroll 34s linear infinite;
+}
+.logo-marquee:hover .logo-track,
+.logo-marquee:focus-within .logo-track { animation-play-state: paused; }
+.logo-item {
+  flex: 0 0 auto; margin: 0 0.7rem; box-sizing: border-box;
+  display: grid; place-items: center;
+  width: 230px; height: 112px; padding: 1.4rem 2rem;
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.logo-item:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.logo-item img { max-width: 160px; max-height: 60px; width: auto; height: auto; display: block; }
+.logo-item--dark { background: linear-gradient(135deg, var(--navy), var(--navy-deep)); border-color: transparent; }
+@keyframes logoScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee { -webkit-mask-image: none; mask-image: none; }
+  .logo-track { animation: none; width: 100%; flex-wrap: wrap; justify-content: center; gap: 1.4rem; }
+  .logo-item { margin: 0; }
+  .logo-item[aria-hidden="true"] { display: none; }
+}
 
 /* --------------------------------------------------------------------------
    Animations d'apparition
@@ -770,3 +938,91 @@ html.qa .sejour-hero { min-height: 560px; }
 @media (max-width: 600px) {
   .lt-sound-toggle { width: 44px; height: 44px; right: 12px; bottom: 12px; }
 }
+
+/* --------------------------------------------------------------------------
+   WhatsApp flottant + FAQ (ajouts)
+   -------------------------------------------------------------------------- */
+.lt-whatsapp {
+  position: fixed; right: 18px; bottom: 18px; z-index: 61;
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  height: 54px; padding: 0 1.15rem 0 0.9rem;
+  background: #25d366; color: #fff; text-decoration: none;
+  border-radius: 999px;
+  font-family: var(--font-title); font-weight: 600; font-size: 0.95rem;
+  box-shadow: 0 14px 34px -10px rgba(37, 211, 102, 0.6);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.lt-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 18px 42px -10px rgba(37, 211, 102, 0.72); }
+.lt-whatsapp:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+.lt-whatsapp svg { flex: 0 0 auto; }
+.lt-whatsapp-label { white-space: nowrap; }
+/* le bouton son se range au-dessus du bouton WhatsApp */
+.lt-sound-toggle { bottom: 84px; }
+
+@media (max-width: 600px) {
+  .lt-whatsapp { padding: 0; width: 52px; height: 52px; justify-content: center; right: 12px; bottom: 12px; }
+  .lt-whatsapp-label { display: none; }
+  .lt-sound-toggle { right: 12px; bottom: 74px; }
+}
+
+.faq { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.9rem; }
+.faq-item {
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 0 1.5rem;
+  box-shadow: 0 10px 30px -22px rgba(2, 27, 48, 0.5);
+}
+.faq-item summary {
+  list-style: none; cursor: pointer; padding: 1.2rem 0;
+  font-family: var(--font-title); font-weight: 600; color: var(--navy);
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+"; font-size: 1.5rem; font-weight: 400; color: var(--cyan-dark);
+  line-height: 1; transition: transform 0.25s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { color: var(--text-soft); margin: 0 0 1.2rem; max-width: 64ch; }
+
+/* YELLOWSTORM — accent jaune énergique (2e couleur de marque, pour le peps)
+   ------------------------------------------------------------------------ */
+:root { --sun: #e6fb02; --sun-deep: #c7da00; }
+
+/* le mot accent du hero passe en jaune solaire sur le fond sombre */
+.hero h1 .accent { color: var(--sun); }
+
+/* les petites étiquettes « sticker » deviennent jaunes → pops sur tout le site */
+.sticker { background: var(--sun); color: var(--navy); }
+.sejour-hero .sticker { background: var(--sun); color: var(--navy); }
+
+/* badge « Gratuit » plein jaune */
+.free-tag { background: var(--sun); border-color: var(--sun); color: var(--navy); }
+
+/* barre de progression de lecture : jaune → cyan */
+.nav-progress { background: linear-gradient(90deg, var(--sun), var(--cyan)); }
+
+/* micro-interaction : la flèche d'une carte destination s'allume en jaune au survol */
+.dest-card:hover .go { background: var(--sun); color: var(--ink); }
+
+/* repère de défilement + marqueur FAQ teintés de jaune */
+.scroll-cue { color: var(--sun); }
+.faq-item summary::after { color: var(--cyan-dark); }
+
+/* liseré jaune sous le filtre actif, pour réchauffer le navy */
+.chip.active { box-shadow: inset 0 -3px 0 0 var(--sun); }
+
+/* Inclus dans le programme (grille 6 atouts) */
+.included { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.6rem 1.8rem; max-width: 1000px; margin: 0 auto; }
+.included .item { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.included .ico {
+  width: 58px; height: 58px; border-radius: 16px;
+  background: linear-gradient(135deg, var(--ice), #e8fbff);
+  display: grid; place-items: center; color: var(--navy); margin-bottom: 1.1rem;
+  box-shadow: 0 10px 26px -16px rgba(2, 27, 48, 0.5);
+  transition: transform 0.3s ease;
+}
+.included .item:hover .ico { transform: translateY(-5px); }
+.included h3 { font-size: 1.18rem; margin-bottom: 0.45rem; color: var(--navy); }
+.included p { font-size: 0.96rem; color: var(--text-soft); max-width: 30ch; margin: 0 auto; }
+@media (max-width: 820px) { .included { grid-template-columns: repeat(2, 1fr); gap: 2.2rem 1.4rem; } }
+@media (max-width: 500px) { .included { grid-template-columns: 1fr; } }
